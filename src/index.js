@@ -1,5 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from "react-router-dom";
+
+import Dashboard from "./components/dashboard/index";
+import Today from "./components/today/index";
 
 class App extends React.Component {
   constructor() {
@@ -8,7 +16,12 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>Hello World!</div>
+      <Router>
+        <div>
+          <Route exact path={'/'} component={Dashboard}/>
+          <Route path={'/:person'} component={Today}/>
+        </div>
+      </Router>
     );
   }
 }

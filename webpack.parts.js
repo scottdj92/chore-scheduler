@@ -15,7 +15,6 @@ exports.devServer = function(options) {
     devServer: {
       historyApiFallback: true,
       hot: true,
-      hotOnly: true,
       stats: 'errors-only',
       host: process.env.host,
       port: process.env.port

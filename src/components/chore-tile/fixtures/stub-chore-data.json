@@ -1,0 +1,30 @@
+[
+  {
+    "title": "mop the floor",
+    "assigned": "Scott",
+    "details": "more detail here",
+    "completed": false,
+    "dateDue": "moment object here"
+  },
+  {
+    "title": "put away the dishes",
+    "assigned": "Scott",
+    "details": "more detail here",
+    "completed": true,
+    "dateDue": "moment object here"
+  },
+  {
+    "title": "put away the dishes",
+    "assigned": "Scott",
+    "details": "more detail here",
+    "completed": false,
+    "dateDue": "moment object here"
+  },
+  {
+    "title": "take out the trash",
+    "assigned": "Scott",
+    "details": "more detail here",
+    "completed": false,
+    "dateDue": "moment object here"
+  }
+]

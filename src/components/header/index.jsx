@@ -9,13 +9,13 @@ const Header = (props) => {
       <div className='navbar-brand'>
         <div className='navbar-item'>
           <Link to={'/'}>
-            <h4 className='title'>Welcome, <b>{props.name}</b></h4>
+            <h4 className='title'>Chore Scheduler</h4>
           </Link>
         </div>
         <div className="navbar-item">
           <span className='fa fa-sun-o'/>
           <h6 className='title is-6'>
-            <Link to={'/' + props.name}>Today</Link>
+            <Link to={'/' + props.name + '/today'}>Today</Link>
           </h6>
         </div>
         <div className='navbar-item'>

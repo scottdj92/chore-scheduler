@@ -13,6 +13,7 @@ const Header = (props) => {
           </Link>
         </div>
         <div className="navbar-item">
+          <span classname='fa fa-sun-o'/>
           <h6 className='title is-6'>
             <Link to={'/' + props.name}>Today</Link>
           </h6>

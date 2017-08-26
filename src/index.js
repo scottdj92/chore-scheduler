@@ -24,7 +24,7 @@ class App extends React.Component {
         <div className='container'>
           <Header name={'Scott'}/>
           <Route exact path={'/'} component={Dashboard}/>
-          <Route path={'/:person'} component={Today}/>
+          <Route path={'/:person/today'} component={Today}/>
           <Route path={'/calendar'} component={Calendar}/>
         </div>
       </Router>

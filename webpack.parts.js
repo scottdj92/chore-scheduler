@@ -100,3 +100,20 @@ exports.generateSourceMaps = function(type) {
     devtool: type
   }
 };
+
+exports.loadFontAwesome = function(path) {
+  return {
+    module: {
+      rules: [
+        {
+          test: /\.(eot|svg|ttf|otf)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+          use: 'file-loader'
+        },
+        {
+          test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+          use: 'url-loader'
+        }
+      ]
+    }
+  }
+};

@@ -5,7 +5,7 @@ import "./index.scss";
 
 const Header = (props) => {
   return (
-    <nav className='navbar'>
+    <nav className='navbar header'>
       <div className='navbar-brand'>
         <div className='navbar-item'>
           <Link to={'/'}>
@@ -13,12 +13,13 @@ const Header = (props) => {
           </Link>
         </div>
         <div className="navbar-item">
-          <span classname='fa fa-sun-o'/>
+          <span className='fa fa-sun-o'/>
           <h6 className='title is-6'>
             <Link to={'/' + props.name}>Today</Link>
           </h6>
         </div>
         <div className='navbar-item'>
+          <span className='fa fa-calendar'/>
           <h6 className='title is-6'>
             <Link to={'/calendar'}>Calendar</Link>
           </h6>

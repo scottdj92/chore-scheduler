@@ -14,15 +14,16 @@ const parts = require('./webpack.parts');
 
 const common = merge([
   {
-    entry: {
-      app: PATHS.app
-    },
+    entry: [
+      "font-awesome-sass-loader!./font-awesome-sass.config.js",
+      PATHS.app,
+    ],
     output: {
       path: PATHS.dist,
       filename: 'bundle.js'
     },
     resolve: {
-      extensions: ['.js', '.jsx']
+      extensions: ['.js', '.jsx', '.scss']
     },
     plugins: [
       new HtmlWebpackPlugin({
@@ -39,6 +40,7 @@ module.exports = function (env) {
       parts.clean(PATHS.build),
       parts.loadJavaScript(PATHS.app),
       parts.lintJavaScript({paths: PATHS.app}),
+      parts.loadFontAwesome(PATHS.app),
       parts.extractCSS(),
     ]);
   }
@@ -58,6 +60,7 @@ module.exports = function (env) {
     }),
     parts.loadJavaScript(PATHS.app),
     parts.loadCSS(),
+    parts.loadFontAwesome(PATHS.app),
     parts.lintJavaScript({
       paths: PATHS.app,
       options: {

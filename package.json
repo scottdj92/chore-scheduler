@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/scottdj92/chore-scheduler#readme",
   "devDependencies": {
+    "@types/react": "^16.0.5",
     "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
     "babel-loader": "^7.1.2",

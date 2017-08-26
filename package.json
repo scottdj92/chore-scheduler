@@ -1,0 +1,24 @@
+{
+  "name": "chore-scheduler",
+  "version": "1.0.0",
+  "description": "A chore scheduler made with React.js and Victory",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottdj92/chore-scheduler.git"
+  },
+  "keywords": [
+    "react",
+    "victory",
+    "bulma"
+  ],
+  "author": "Scott Jones",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scottdj92/chore-scheduler/issues"
+  },
+  "homepage": "https://github.com/scottdj92/chore-scheduler#readme"
+}
